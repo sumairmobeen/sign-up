@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SININ FORM</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+    <div class="navbar">
+        <a href="#">Signup</a>
+        <a href="login.html">Login</a>
+    </div>
+    
+   <h2> <img src="./sni1.png" width="300px" height="100px" alt="sno"></h2>
+    
+
+    <div class="form">
+        <form action="#" onsubmit="formdata()">
+
+
+
+            Name:
+            <input type="text" id="fname" maxlength="15" name="SINIIN" placeholder="First Name" required="required">
+            <input type="text" id="lname" maxlength="15" name="SINIIN" placeholder="Last Name" required="required">
+
+            <br>
+            <br>
+
+
+            Gender :
+
+            <input type="radio" name="gender" value="male" checked="checked" required="required" />Male
+            <input type="radio" name="gender" value="female" required="required" />Female
+
+
+            &nbsp; &nbsp; &nbsp;
+            Age :
+            <input type="date" required="required">
+
+            <br>
+            <br>
+
+            E-mail:
+            <input type="text" id="mail" maxlength="30" name="email" placeholder="email@gmail.com" required="required">
+
+            <br>
+            <br>
+
+            Password :
+
+            <input type="password" name="pasword" id="pasword" required="required">
+
+            <div id="butt">
+
+
+                <!-- <input type="button" onclick="sign" value="signup"></buttn>
+
+            <button type="button" class="cancelbtn"> Cancel</button> -->
+                <input type="button" onclick="check(this.form)" value="signup" />
+                <input type="reset" value="Cancel" />
+
+
+            </div>
+
+
+        </form>
+
+
+
+
+    </div>
+
+    <script>
+
+        // var name = [];
+        // var email =[];
+        // var phone = [];
+        // var arr = [];
+
+        // function formdata() {
+        //     const fname = document.getElementById("input").value;
+        //     arr.push(fname);
+        //     const lname = document.getElementById("input").value;
+        //     arr.push(lname);
+        //     const mail = document.getElementById("input").value;
+        //     arr.push(mail);
+
+        //     document.getElementById("formdata").innerText = arr;
+        //     document.getElementById("input").value = window.open("logout.html");
+
+
+
+
+
+        // }
+
+
+
+        function check(form) {
+            if (form.email.value == "mobeengrs@gmail.com" && form.pasword.value == "12345") {
+                window.open('login.html')
+            }
+
+            else {
+                alert("Error Password or Username")
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
